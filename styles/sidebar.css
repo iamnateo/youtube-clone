@@ -1,0 +1,81 @@
+@media (max-width: 1200px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /* align-items and justify-content center aligns items Vertically and Horizontally respectively when Flex is set to defaut (i.e. Display:flex or flex-direction: row
+  If flex-direction is "column" they are switched.
+  so, Align-items = vertical, justify-content = horizontal (default)
+      Align-tems = horizontal, justify-content = vertical (flex-direction: column)*/
+  
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }  
+}
+
+@media (min-width: 1201px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 250px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  /* align-items and justify-content center aligns items Vertically and Horizontally respectively when Flex is set to defaut (i.e. Display:flex or flex-direction: row
+  If flex-direction is "column" they are switched.
+  so, Align-items = vertical, justify-content = horizontal (default)
+      Align-tems = horizontal, justify-content = vertical (flex-direction: column)*/
+  
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+    flex: 1;
+  }
+  
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    flex: 2;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }  
+}
